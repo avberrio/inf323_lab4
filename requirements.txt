@@ -1,0 +1,7 @@
+Django
+pip
+pytz
+setuptools
+wheel
+uwsgi
+psycopg2
