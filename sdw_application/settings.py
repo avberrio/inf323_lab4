@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'w81m+c!zjp6t%a$65oxp5&k@%s9!$*=i#tm5g=gkm9y_a)f-o+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'sdw_application.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'sdw',
+        'USER': 'sdw',
+        'PASSWORD': 'm1kUMUXmEB',
+        'HOST': 'db',
+        'PORT': '5432'
     }
 }
 
